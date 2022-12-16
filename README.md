@@ -1,1 +1,1 @@
-# CST-JS Labs
+# CST JS Labs
