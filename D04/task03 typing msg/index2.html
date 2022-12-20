@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var msg = ' Your messages will be disabled character by character:) Few Seconds and then window will close'
+        function displayMsg(msg, index, interval) {
+            if (index < msg.length) {
+                document.write(msg[index])
+                index++
+            }
+            setTimeout(function () {
+                displayMsg(msg, index, interval)
+            }, interval)
+        }
+
+        displayMsg(msg, 0, 200)
+
+        setTimeout(function () {
+            window.close()
+        }, 250 * msg.length);
+    </script>
+</body>
+
+</html>

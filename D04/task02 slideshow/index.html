@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <style>
+    #wrapper {
+      width: 800px;
+      /*border:2px solid black;*/
+      padding: 10px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    body {
+      background-color: #faedcd;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4f5551;
+    }
+
+    #wrapper>div {
+      width: 400px;
+      margin: 30px auto;
+    }
+
+    input[type="button"] {
+      background-color: #4f5551;
+      width: 70px;
+      padding: 10px;
+      font: bold 12px verdana;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 13px;
+    }
+
+    input[type="button"]:focus {
+      border: none;
+      outline: none;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Animals Slider</h1>
+  <div id="wrapper">
+    <img src="Images/1.jpg" id="myimg" />
+    <div>
+      <input type="button" value=" < " onclick="prevFun();" />
+      <input type="button" id="startBtn" value="Start" onclick="startFun()" />
+      <input type="button" id="stopBtn"  value="Stop" onclick="stopFun();" />
+      <input type="button" value=">" onclick="nextFun();" />
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
