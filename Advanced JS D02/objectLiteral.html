@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        var myobj = {
+            ID: 100,
+            Name: "Afnan",}
+           // accessors & defineProperty
+        
+        //myobj.Name="Afnan";
+        Object.defineProperty(myobj, "Name", {
+            set: function (_value) {
+                this.name = _value;        
+            },
+            get: function () {
+                return this.name;
+            }, configurable:true,
+            value: "Afnan",
+            writable: true,
+            configurable: false,
+        });
+        Object.defineProperty(myobj, "ID", {
+
+            set: function (_value) {
+                this.id = _value;        
+            },
+            get: function () {
+                return this.id;
+            }, configurable:true,
+            value: "100",
+            writable: true,
+            configurable: false,
+        });
+        
+
+    </script>
+</body>
+</html>
